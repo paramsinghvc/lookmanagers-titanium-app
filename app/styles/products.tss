@@ -1,0 +1,62 @@
+
+".container": {}
+
+"#productsList":{
+	backgroundColor: '#FFCC00',
+	color: '#000000'
+}
+".product": {
+	height: '110dp',
+	paddingTop: '5dp',
+	paddingLeft: '5dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+".productImage": {
+	left: 20,
+	width: '100dp',
+	height: '100dp'
+}
+".productDesc":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 20,
+	font: {
+		fontWeight: 'bold'
+	}
+}
+
+".productName": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 20,
+	font: {
+		fontSize: '12dp'
+	}
+}
+
+".productPrice":{
+	left: 20,
+	font: {
+		fontSize: '12dp'
+	}
+}
+
+
+".productRow": {
+	width: Ti.UI.FILL,
+	layout: 'horizontal',
+	height: Ti.UI.SIZE,
+	paddingTop: '5dp',
+	paddingLeft: '5dp'
+}
+".imageContainer": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+".rightView": {
+	width: Ti.UI.FILL,
+	height: '100dp',
+	right: 0,
+	layout: 'vertical',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}

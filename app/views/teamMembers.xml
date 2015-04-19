@@ -1,0 +1,8 @@
+<Alloy>
+	<!-- <Collection src=""/> -->
+	<Tab title="Team Members" icon="images/workers.png">
+		<Window title="LookManagers">
+			
+		</Window>
+	</Tab>
+</Alloy>

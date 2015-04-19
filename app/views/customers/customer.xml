@@ -1,0 +1,10 @@
+<Alloy>
+	<Model src="customers" />
+	<Window class="container">
+	
+			<Label id="name" top="10" class="productDesc" />
+			<Label id="gender" class="productName" top="40" />
+			<Label id="city" top="70" class="productPrice"/>
+	
+	</Window>
+</Alloy>

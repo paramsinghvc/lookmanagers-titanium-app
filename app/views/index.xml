@@ -1,0 +1,13 @@
+<Alloy>
+
+		<!-- <Require type="widget" src="com.alcoapps.drawermenu" id="drawermenu"/> -->
+		
+		<TabGroup id="tabGroup">
+			<Require src="products" id="productsController" />
+			<Require src="customers" id="customersController" />
+			<Require src="activities" id="activitiesController" />
+			<Require src="orders" id="ordersController" />
+			<Require src="teamMembers" id="teamMembersController" />
+		</TabGroup> 
+
+</Alloy>

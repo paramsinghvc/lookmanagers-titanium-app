@@ -1,0 +1,8 @@
+<Alloy>
+	<!-- <Collection src=""/> -->
+	<Tab title="Orders" icon="images/orders.png">
+		<Window title="LookManagers">
+			
+		</Window>
+	</Tab>
+</Alloy>

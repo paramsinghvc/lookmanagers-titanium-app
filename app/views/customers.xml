@@ -1,0 +1,17 @@
+<Alloy>
+	<Collection src="customers" />
+	<Tab title="Customers" icon="images/group.png">
+		<Window title="LookManagers">
+			<TableView name="customers" id="productsList" dataCollection="customers" onClick="customerRowClick">
+				<TableViewRow class="product">
+					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
+					<View class="rightView">
+						<Label id="name" text="{name}" top="10" class="productDesc" />
+						<Label id="gender" text="{gender}" class="productName" top="40" />
+						<Label id="city" text="{current_city}" top="70" class="productPrice"/>
+					</View>
+				</TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
+</Alloy>

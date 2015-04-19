@@ -1,0 +1,12 @@
+<Alloy>
+	<Model src="products" />
+	<Window title="LookManagers" id="pWindow" modal="false">
+		<View id="pHolder">
+
+			<Label  class="productName" id="name" top="10" />
+			<Label top="5" id="desc" class="productDesc" />
+			<Label top="5" class="productPrice" id="price"/>
+
+		</View>
+	</Window>
+</Alloy>

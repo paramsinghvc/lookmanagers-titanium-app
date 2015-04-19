@@ -1,0 +1,8 @@
+<Alloy>
+	<!-- <Collection src=""/> -->
+	<Tab title="Feeds" icon="images/feed.png">
+		<Window title="LookManagers">
+			
+		</Window>
+	</Tab>
+</Alloy>

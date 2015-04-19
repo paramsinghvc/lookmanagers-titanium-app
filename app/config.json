@@ -1,0 +1,16 @@
+{
+  "global": {},
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "dependencies": {
+    "com.alcoapps.drawermenu": "2.0"
+  },
+  "apiUri": "http://lookmanager.dev/api/",
+  "imagesBase": "http://lookmanager.dev/assets/uploads/",
+  "thumbsBase": "http://lookmanager.dev/assets/uploads/thumbs/"
+}

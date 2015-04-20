@@ -15,7 +15,7 @@ customers.fetch({
  var customerRowClick = function(event){
 	 var customerId = customers.at(event.index).attributes.id;
 	
-	var cust = Alloy.createController('customers/customer', {customerId : customerId}).getView();
+	var cust = Alloy.createController('customer', {customerId : customerId}).getView();
 	args.dm.drawermainview.add(cust);	
 	
 	

@@ -1,4 +1,5 @@
 <Alloy>
+
 	<Model src="products" />
 	<Window title="LookManagers" id="pWindow" modal="false">
 		<View id="pHolder">
@@ -9,4 +10,6 @@
 
 		</View>
 	</Window>
+
 </Alloy>
+

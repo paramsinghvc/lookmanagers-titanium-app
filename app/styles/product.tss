@@ -1,8 +1,0 @@
-
-".pWindow": {
-	backgroundColor: "#ea5d4d"
-}
-
-".pHolder": {
-	layout: 'vertical'
-}

@@ -28,7 +28,7 @@ function productRowClick(event) {
 		productId : productAttrs.id,
 	};
 
-	var detailView = Alloy.createController('product', a).getView();
+	var detailView = Alloy.createController('products/product', a).getView();
 	$.productsTab.open(detailView);
 // nav.openWin(Alloy.Globals.productsNav, 'products/product', a);
 	

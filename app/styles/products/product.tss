@@ -1,0 +1,35 @@
+
+"#pWindow": {
+	backgroundColor: "#F2F2F2"
+}
+
+"#pHolder": {
+	layout: 'vertical'
+}
+
+"#name": {
+	font: {
+		fontSize: '18dp',
+		fontWeight: 'bold'
+	}
+}
+
+".tagWrapper": {
+
+
+	borderRadius: 6, // common default style
+	borderColor: 'black',
+	borderWidth: 1,
+	top : '5',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+
+".tag": {
+	top: '5dp',
+	bottom: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '5dp',
+	right: '5dp'
+}

@@ -1,0 +1,16 @@
+"#cWindow": {
+	backgroundColor: '#F2F2F2'
+}
+".container": {}
+
+
+"#cHolder": {
+	layout: 'vertical'
+}
+
+".custName": {
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+}

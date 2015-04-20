@@ -1,4 +1,17 @@
 
-".container" : {
-  
+".container": {}
+
+".cHolder": {
+	layout: 'vertical',
+	height: Titanium.UI.SIZE,
+	top : '10dp',
+	bottom : '10dp',
+	font : {
+		fontSize : '10dp'
+	}
+}
+
+".customer": {
+	height: Titanium.UI.SIZE,
+	
 }

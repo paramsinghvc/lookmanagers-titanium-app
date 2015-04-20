@@ -14,7 +14,6 @@ pm.fetch({
 		$.desc.text = data.attributes.description;
 		$.name.text = data.attributes.name;
 		$.price.text = data.attributes.price;
-		console.log(data.attributes.photos);
 
 		(data.attributes.photos).forEach(function(photo, index, photos) {
 			var imageView = Ti.UI.createImageView({
@@ -24,11 +23,23 @@ pm.fetch({
 		});
 
 		(data.attributes.tags).forEach(function(tag, index, tags) {
-			var tagView = Ti.UI.createLabel({
+			// var tagView = Ti.UI.createLabel({
+				// text : tag.name,
+				// class : 'tag'
+			// });	
+			
+			var tagView = $.UI.create('label', {
 				text : tag.name,
-				class : 'tag'
-			});	
-			$.pHolder.add(tagView);	
+				classes : ['tag'],
+				top : '5'
+			});
+			var tagWrapper =  $.UI.create('view', {
+				
+				classes : ['tagWrapper']
+			});
+			tagWrapper.add(tagView);
+			
+			$.pHolder.add(tagWrapper);	
 		});
 
 	},

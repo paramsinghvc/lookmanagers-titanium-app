@@ -3,7 +3,8 @@ exports.definition = {
 		// URL: Alloy.Globals.apiUri +"customers?phouse=1",
 		adapter: {
 			type: "restapi",
-			collection_name: "customers"
+			collection_name: "customers",
+			idAttribute: "id"
 		}
 	},
 	extendModel: function(Model) {

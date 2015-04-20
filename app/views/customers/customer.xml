@@ -1,0 +1,12 @@
+<Alloy>
+	<Model src="customers" />
+	<Window title="LookManagers" id="cWindow" modal="false">
+		<View id="cHolder">
+			<Label id="name" top="5" class="custName" />
+			<Label id="gender" top="5" class="custGender" />
+			<Label id="city" top="5" class="custCity"/>
+			<Label id="email" top="5" class="custEmail"/>
+			<Label id="phone" top="5" class="custPhone"/>			
+		</View>
+	</Window>
+</Alloy>

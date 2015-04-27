@@ -1,8 +1,17 @@
 <Alloy>
-	<!-- <Collection src=""/> -->
+	<Collection src="orders"/>
 	<Tab title="Orders" icon="images/orders.png">
 		<Window title="LookManagers">
-			
+			<TableView name="ordersList" id="ordersList" dataCollection="" onClick="orderRowClick">
+				<TableViewRow class="orderRow">
+					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
+					<View class="cHolder">
+						<Label id="name" text="{name}" top="5" class="" />
+						<Label id="city" text="{}" top="5" class=""/>
+						<Label id="gender" text="{}" class="" top="5" />
+					</View>
+				</TableViewRow>
+			</TableView>
 		</Window>
 	</Tab>
 </Alloy>

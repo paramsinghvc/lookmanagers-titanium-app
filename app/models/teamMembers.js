@@ -20,7 +20,7 @@ exports.definition = {
 		_.extend(Collection.prototype, {
 			
 			parse: function(resp){
-				
+				return resp.data;
 			}
 		});
 

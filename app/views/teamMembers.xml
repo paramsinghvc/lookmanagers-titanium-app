@@ -2,13 +2,14 @@
 	<Collection src="teamMembers"/>
 	<Tab title="Team Members" icon="images/workers.png">
 		<Window title="LookManagers">
-			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" onClick="teamMemberRowClick">
+			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform">
 				<TableViewRow class="teamMemberRow">
-					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
+					<ImageView class="productImage" image="{imageUri}"></ImageView>
 					<View class="tmHolder">
 						<Label id="name" text="{name}" top="5" class="name" />
-						<Label id="city" text="{current_city}" top="5" class="email"/>
+						<Label id="city" text="{email}" top="5" class="email"/>
 						<Label id="gender" text="{gender}" class="gender" top="5" />
+						<Label id="gender" text="{phone}" class="gender" top="5" />
 					</View>
 				</TableViewRow>
 			</TableView>

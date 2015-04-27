@@ -2,10 +2,9 @@
 	<Collection src="feeds"/>
 	<Tab title="Feeds" icon="images/feed.png" id="feedsTab">
 		<Window title="LookManagers">
-			<TableView name="feedsTable" id="List" dataCollection="" onClick="RowClick">
-				<TableViewRow class="feedRow">
-					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
-					<View class="cHolder">
+			<TableView name="feedsTable" id="feedsList" dataCollection="feeds" onClick="feedsRowClick">
+				<TableViewRow class="feedsRow">					
+					<View class="fHolder">
 						<Label id="name" text="{text}" top="5" class="feedText" />						
 					</View>
 				</TableViewRow>

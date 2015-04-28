@@ -1,8 +1,8 @@
 <Alloy>
 	<Collection src="teamMembers"/>
-	<Tab title="Team Members" icon="images/workers.png">
+	<Tab title="Team Members" id="teamMembersTab" icon="images/workers.png">
 		<Window title="LookManagers">
-			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform">
+			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform" onClick="teamMemberRowClick">
 				<TableViewRow class="teamMemberRow">
 					<ImageView class="productImage" image="{imageUri}"></ImageView>
 					<View class="tmHolder">

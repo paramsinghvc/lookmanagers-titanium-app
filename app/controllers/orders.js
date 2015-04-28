@@ -20,3 +20,15 @@ function modelTransform(model) {
 	return t;
 
 }
+
+
+ var orderRowClick = function(event){
+	 var orderId = orders.at(event.index).attributes.id;
+	
+	var order = Alloy.createController('orders/order', {orderId : orderId}).getView();
+	
+	
+	$.ordersTab.open(order);
+		
+	
+};

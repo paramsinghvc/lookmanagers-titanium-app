@@ -28,3 +28,15 @@ function modelTransform(model) {
 	return t;
 
 }
+
+
+ var teamMemberRowClick = function(event){
+	 var teamMemberId = teamMembers.at(event.index).attributes.id;
+	
+	var teamMember = Alloy.createController('teamMembers/teamMember', {teamMemberId : teamMemberId}).getView();
+	
+	
+	$.teamMembersTab.open(teamMember);
+		
+	
+};

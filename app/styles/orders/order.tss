@@ -5,10 +5,3 @@
 "#cHolder": {
 	layout: 'vertical'
 }
-
-".custName": {
-	font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	}
-}

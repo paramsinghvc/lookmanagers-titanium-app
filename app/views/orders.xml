@@ -1,8 +1,8 @@
 <Alloy>
 	<Collection src="orders"/>
-	<Tab title="Orders" icon="images/orders.png">
+	<Tab title="Orders" id="ordersTab" icon="images/orders.png">
 		<Window title="LookManagers">
-			<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform">
+			<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform" onClick="orderRowClick">
 				<TableViewRow class="orderRow">
 					 <ImageView class="productImage" image="{imageUri}"></ImageView> 
 					<View class="cHolder">

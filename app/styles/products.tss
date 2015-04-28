@@ -19,6 +19,7 @@
 ".productDesc":{
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	left: 20,
+	color: "#161712",
 	font: {
 		fontWeight: 'bold'
 	}
@@ -27,6 +28,7 @@
 ".productName": {
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	left: 20,
+	color: "#161712",
 	font: {
 		fontSize: '12dp'
 	}
@@ -34,6 +36,7 @@
 
 ".productPrice":{
 	left: 20,
+	color: "#161712",
 	font: {
 		fontSize: '12dp'
 	}
@@ -43,7 +46,7 @@
 ".productRow": {
 	width: Ti.UI.FILL,
 	layout: 'horizontal',
-	height: Ti.UI.SIZE,
+	height: '110dp',
 	paddingTop: '5dp',
 	paddingLeft: '5dp'
 }
@@ -55,7 +58,8 @@
 
 ".rightView": {
 	width: Ti.UI.FILL,
-	height: '100dp',
+	height: Ti.UI.SIZE,
+	
 	right: 0,
 	layout: 'vertical',
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT

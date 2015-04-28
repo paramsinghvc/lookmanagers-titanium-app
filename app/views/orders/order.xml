@@ -1,4 +1,13 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Model src="orders" />
+	<Window title="LookManagers" id="cWindow" modal="false">
+		<View id="cHolder">
+	
+			<Label id="name" top="5" class="custName" />
+			<Label id="description" top="5" class="custGender" />
+			<Label id="price" top="5" class="custCity"/>
+			<Label id="current_state" top="5" class="custEmail"/>
+						
+		</View>
+	</Window>
 </Alloy>

@@ -4,12 +4,14 @@
 		<Window title="LookManagers">
 			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform" onClick="teamMemberRowClick">
 				<TableViewRow class="teamMemberRow">
-					<ImageView class="productImage" image="{imageUri}"></ImageView>
-					<View class="tmHolder">
-						<Label id="name" text="{name}" top="5" class="name" />
-						<Label id="city" text="{email}" top="5" class="email"/>
-						<Label id="gender" text="{gender}" class="gender" top="5" />
-						<Label id="phone" text="{phone}" class="gender" top="5" />
+					<View class="imageContainer" top="10">
+					<ImageView class="teamMemberImage" image="{imageUri}"></ImageView>
+					</View>
+					<View class="rightView">
+						<Label id="name" text="{name}" top="5" class="teamMemberName" />
+						<Label id="city" text="{email}" top="5" class="teamMemberEmail"/>
+						<Label id="gender" text="{gender}" class="teamMemberGender" top="5" />
+						<Label id="phone" text="{phone}" class="teamMemberPhone" top="5" />
 					</View>
 				</TableViewRow>
 			</TableView>

@@ -1,15 +1,17 @@
 <Alloy>
 	<Collection src="orders"/>
 	<Tab title="Orders" id="ordersTab" icon="images/orders.png">
-		<Window title="LookManagers">
+		<Window title="LookManagers" id="cWindow">
 			<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform" onClick="orderRowClick">
 				<TableViewRow class="orderRow">
-					 <ImageView class="productImage" image="{imageUri}"></ImageView> 
-					<View class="cHolder">
-						<Label id="name" text="{name}" top="5" class="" />
-						<Label id="customer" text="{customer}" top="5" class=""/>
-						<Label id="price" text="{price}" class="" top="5" />
-						<Label id="price" text="{current_state}" class="" top="5" />
+					<View class="imageContainer" top="10">
+						<ImageView class="orderImage" image="{imageUri}"></ImageView>
+					</View>
+					<View class="rightView">
+						<Label id="name" text="{name}" top="5" class="orderName" />
+						<Label id="customer" text="{customer}" top="5" class="orderCustomer"/>
+						<Label id="price" text="{price}" class="orderPrice" top="5" />
+						<Label id="price" text="{current_state}" class="orderCurrentState" top="5" />
 					</View>
 				</TableViewRow>
 			</TableView>

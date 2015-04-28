@@ -9,5 +9,8 @@
 	textAlign : 'left'
 }
 ".feedText": {
-	color: "#000000"
+	color: "#000000",
+	font: {
+		fontSize: '12dp'	
+	}
 }

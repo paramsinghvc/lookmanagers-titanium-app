@@ -16,7 +16,7 @@ cm.fetch({
 		$.current_state.text = data.attributes.current_state;
 
 		var imageView = Ti.UI.createImageView({
-			image : encodeURI(Alloy.Globals.thumbsBase + "products/" + data.attributes.photo)
+			image : encodeURI(Alloy.Globals.imagesBase + "products/" + data.attributes.photo)
 		});
 		$.cHolder.add(imageView);
 

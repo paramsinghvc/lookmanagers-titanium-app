@@ -1,4 +1,81 @@
 
-".container" : {
-  
+".container": {}
+
+"#teamMembersList":{
+	backgroundColor: '#F2F2F2',
+	color: '#000000'
+}
+".teamMember": {
+	height: '110dp',
+	paddingTop: '5dp',
+	paddingLeft: '5dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+".teamMemberImage": {
+	left: 20,
+	width: '100dp',
+	height: '100dp'
+}
+".teamMemberDesc":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 20,
+	color: "#161712",
+	font: {
+		fontWeight: 'bold'
+	}
+}
+
+".teamMemberName": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 20,
+	color: "#161712",
+	font: {
+		fontSize: '12dp',
+		fontWeight: 'bold'
+	}
+}
+
+".teamMemberGender":{
+	left: 20,
+	color: "#161712",
+	font: {
+		fontSize: '12dp'
+	}
+}
+".teamMemberEmail":{
+	left: 20,
+	color: "#161712",
+	font: {
+		fontSize: '12dp'
+	}
+}
+".teamMemberPhone":{
+	left: 20,
+	color: "#161712",
+	font: {
+		fontSize: '12dp'
+	}
+}
+
+
+".teamMemberRow": {
+	width: Ti.UI.FILL,
+	layout: 'horizontal',
+	height: '110dp',
+	paddingTop: '5dp',
+	paddingLeft: '5dp'
+}
+".imageContainer": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+".rightView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	
+	right: 0,
+	layout: 'vertical',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
 }

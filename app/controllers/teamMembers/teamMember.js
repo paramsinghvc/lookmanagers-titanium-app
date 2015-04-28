@@ -18,7 +18,7 @@ cm.fetch({
 		$.phone.text = data.attributes.phone;
 		var photo_url = data.attributes.photo_url;
 		var imageView = Ti.UI.createImageView({
-			image : photo_url.indexOf('http') > -1 ? photo_url : encodeURI(Alloy.Globals.thumbsBase + "team_members/" + photo_url)
+			image : photo_url.indexOf('http') > -1 ? photo_url : encodeURI(Alloy.Globals.imagesBase + "team_members/" + photo_url)
 		});
 		
 		$.cHolder.add(imageView);

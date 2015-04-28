@@ -15,9 +15,6 @@
 					</View>
 				</TableViewRow>
 			</TableView>
-		</Window>
-
-		
-
+		</Window>		
 	</Tab>
 </Alloy>

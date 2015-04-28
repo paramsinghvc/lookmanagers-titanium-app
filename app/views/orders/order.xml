@@ -1,0 +1,13 @@
+<Alloy>
+	<Model src="orders" />
+	<Window title="LookManagers" id="cWindow" modal="false">
+		<View id="cHolder">
+
+			<Label id="name" top="5" class="orderName" />
+			<Label id="description" top="5" class="orderDesc" />
+			<Label id="price" top="5" class="orderPrice"/>
+			<Label id="current_state" top="5" class="orderCurrentState"/>
+
+		</View>
+	</Window>
+</Alloy>

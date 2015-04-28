@@ -2,10 +2,10 @@
 	<Model src="teamMembers" />
 	<Window title="LookManagers" id="cWindow" modal="false">
 		<View id="cHolder">
-			<Label id="name" top="5" class="custName" />
-			<Label id="gender" top="5" class="custGender" />			
-			<Label id="email" top="5" class="custEmail"/>
-			<Label id="phone" top="5" class="custPhone"/>			
+			<Label id="name" top="5" class="teamMemberName" />
+			<Label id="gender" top="5" class="teamMemberGender" />			
+			<Label id="email" top="5" class="teamMemberEmail"/>
+			<Label id="phone" top="5" class="teamMemberPhone"/>			
 		</View>
 	</Window>
 </Alloy>

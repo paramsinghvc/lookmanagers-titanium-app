@@ -17,7 +17,7 @@ pm.fetch({
 
 		(data.attributes.photos).forEach(function(photo, index, photos) {
 			var imageView = Ti.UI.createImageView({
-				image : encodeURI(Alloy.Globals.thumbsBase + "products/" + photo.name)
+				image : encodeURI(Alloy.Globals.imagesBase + "products/" + photo.name)
 			});
 			$.pHolder.add(imageView);
 		});

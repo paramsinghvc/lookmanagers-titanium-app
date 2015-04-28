@@ -5,3 +5,31 @@
 "#cHolder": {
 	layout: 'vertical'
 }
+
+"#pWindow": {
+	backgroundColor: "#F2F2F2"
+}
+
+"#pHolder": {
+	layout: 'vertical'
+}
+
+"#name": {
+	color: "#161712",
+	font: {
+		fontSize: '18dp',
+		fontWeight: 'bold'
+	}
+}
+
+"#description":{
+	color: "#161712"
+}
+
+"#price": {
+	color: "#161712"
+}
+
+"#current_state": {
+	color: "#161712"
+}

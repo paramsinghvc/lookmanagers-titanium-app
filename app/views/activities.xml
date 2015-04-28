@@ -4,7 +4,7 @@
 		<Window title="LookManagers">
 			<TableView name="feedsTable" id="feedsList" dataCollection="activities">
 				<TableViewRow class="feedsRow">					
-					<View class="fHolder" top="10" left="10" right="10" bottom="10">
+					<View class="fHolder" top="10" left="10" right="10">
 						<Label id="text" text="{text}" class="feedText" top="5" left="10" right="10" bottom="10"/>						
 					</View>
 				</TableViewRow>

@@ -5,3 +5,30 @@
 "#cHolder": {
 	layout: 'vertical'
 }
+
+
+".teamMemberName": {
+	font: {
+		fontSize: '12dp',
+		fontWeight: 'bold'
+	},
+	color : '#161712'
+}
+".teamMemberGender": {
+	font: {
+		fontSize: '12dp'
+	},
+	color : '#161712'
+}
+".teamMemberPhone": {
+	font: {
+		fontSize: '12dp'
+	},
+	color : '#161712'
+}
+".teamMemberEmail": {
+	font: {
+		fontSize: '12dp'
+	},
+	color : '#161712'
+}

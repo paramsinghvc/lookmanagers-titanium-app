@@ -8,11 +8,21 @@
 }
 
 "#name": {
+	color : "#161712",
 	font: {
 		fontSize: '18dp',
 		fontWeight: 'bold'
 	}
 }
+
+"#desc" :{
+	color : "#161712"
+}
+
+"#price" : {
+	color : "#161712"
+}
+
 
 ".tagWrapper": {
 
@@ -27,7 +37,8 @@
 
 ".tag": {
 	top: '5dp',
-	bottom: '5dp',
+	bottom: '5dp',	
+	color : "#161712",
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	left: '5dp',

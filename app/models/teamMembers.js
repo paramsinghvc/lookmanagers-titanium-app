@@ -1,6 +1,6 @@
 exports.definition = {
 	config: {
-		
+		debug : "1",
 		adapter: {
 			type: "restapi",
 			collection_name: "teamMembers",

@@ -9,6 +9,21 @@
 ".custName": {
 	font: {
 		fontSize: '20dp',
-		fontWeight: 'bold'
-	}
+		fontWeight: 'bold',		
+	},
+	color : '#161712'
 }
+
+".custGender": {
+	color : '#161712'
+}
+".custEmail": {
+	color : '#161712'
+}
+".custPhone": {
+	color : '#161712'
+}
+".custCity": {
+	color : '#161712'
+}
+

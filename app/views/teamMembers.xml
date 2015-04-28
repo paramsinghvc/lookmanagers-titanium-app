@@ -9,7 +9,7 @@
 						<Label id="name" text="{name}" top="5" class="name" />
 						<Label id="city" text="{email}" top="5" class="email"/>
 						<Label id="gender" text="{gender}" class="gender" top="5" />
-						<Label id="gender" text="{phone}" class="gender" top="5" />
+						<Label id="phone" text="{phone}" class="gender" top="5" />
 					</View>
 				</TableViewRow>
 			</TableView>

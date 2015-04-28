@@ -1,11 +1,11 @@
 <Alloy>
-	<Collection src="feeds"/>
+	<Collection src="activities"/>
 	<Tab title="Feeds" icon="images/feed.png" id="feedsTab">
 		<Window title="LookManagers">
-			<TableView name="feedsTable" id="feedsList" dataCollection="feeds" onClick="feedsRowClick">
+			<TableView name="feedsTable" id="feedsList" dataCollection="activities">
 				<TableViewRow class="feedsRow">					
-					<View class="fHolder">
-						<Label id="name" text="{text}" top="5" class="feedText" />						
+					<View class="fHolder" top="10" left="10" right="10" bottom="10">
+						<Label id="text" text="{text}" class="feedText" top="5" left="10" right="10" bottom="10"/>						
 					</View>
 				</TableViewRow>
 			</TableView>

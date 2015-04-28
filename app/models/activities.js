@@ -1,9 +1,9 @@
 exports.definition = {
 	config: {
-		
+		debug : "1",
 		adapter: {
 			type: "restapi",
-			collection_name: "feeds",
+			collection_name: "activities",
 			idAttribute: "id"
 		}
 	},
@@ -19,9 +19,6 @@ exports.definition = {
 	extendCollection: function(Collection) {
 		_.extend(Collection.prototype, {
 			
-			parse: function(resp){
-				return resp;
-			}
 		});
 
 		return Collection;

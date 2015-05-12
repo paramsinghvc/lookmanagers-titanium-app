@@ -1,6 +1,6 @@
 <Alloy>
 		<!-- <Require type="widget" src="com.alcoapps.drawermenu" id="drawermenu"/> -->		
-		<TabGroup id="tabGroup">
+		<TabGroup id="tabGroup" onOpen="doOpen">
 			<Require src="products" id="productsController" />
 			<Require src="customers" id="customersController" />
 			<!-- <Require src="activities" id="activitiesController" /> -->

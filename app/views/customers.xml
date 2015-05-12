@@ -2,6 +2,9 @@
 	<Collection src="customers" />
 	<Tab title="Customers" icon="images/group.png" id="customersTab">
 		<Window title="LookManagers">
+			<RightNavButton platform="ios">
+				<Button id="addCustomerButton">Add</Button>
+			</RightNavButton>
 			<TableView name="customers" id="customerList" dataCollection="customers" onClick="customerRowClick">
 				<TableViewRow class="customer">
 					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->

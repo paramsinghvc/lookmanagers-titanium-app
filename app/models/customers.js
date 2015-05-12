@@ -1,6 +1,7 @@
 exports.definition = {
 	config: {
 		// URL: Alloy.Globals.apiUri +"customers?phouse=1",
+		debug : 1,
 		adapter: {
 			type: "restapi",
 			collection_name: "customers",

@@ -1,29 +1,37 @@
 "#cWindow": {
 	backgroundColor: '#F2F2F2'
 }
-
+'#parentHolder':{
+	layout : 'vertical'
+}
 "#cHolder": {
-	layout: 'vertical'
+	layout: 'vertical',
+	height : Titanium.UI.SIZE
 }
 
 ".custName": {
 	font: {
 		fontSize: '20dp',
-		fontWeight: 'bold',		
+		fontWeight: 'bold'
 	},
-	color : '#161712'
+	color: '#161712'
 }
 
 ".custGender": {
-	color : '#161712'
+	color: '#161712'
 }
 ".custEmail": {
-	color : '#161712'
+	color: '#161712'
 }
 ".custPhone": {
-	color : '#161712'
+	color: '#161712'
 }
 ".custCity": {
-	color : '#161712'
+	color: '#161712'
 }
 
+'#editCustomerButton': {
+	width : Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	top : '20dp'
+}

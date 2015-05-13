@@ -1,6 +1,18 @@
 var args = arguments[0] || {};
-var radioButton = require('./tiRadioButton');
-
+var radioButton = require('tiRadioButton');
+var radioGroup = radioButton.createGroup({
+    groupId:1,
+    width:119,
+    height:34,
+    layout:'horizontal',
+    radioItemsValue:['One', 'Two', 'Three'],
+    radioItemsPadding:10,
+    radioItemsBackgroundSelectedImage:'radioButtonActive.png',
+    radioItemsBackgroundImage:'radioButton.png',
+    radioItemsWidth:33,
+    radioItemsHeight:34
+});
+$.parentHolder.add(radioGroup);
 function saveCustomer() {
 	var cust = Alloy.createModel('customers');
 	var data = {
@@ -30,18 +42,6 @@ function saveCustomer() {
 }
 
 
-var radioGroup = radioButton.createGroup({
-    groupId:1,
-    width:119,
-    height:34,
-    layout:'horizontal',
-    radioItemsValue:['One', 'Two', 'Three'],
-    radioItemsPadding:10,
-    radioItemsBackgroundSelectedImage:'radioButtonActive.png',
-    radioItemsBackgroundImage:'radioButton.png',
-    radioItemsWidth:33,
-    radioItemsHeight:34
-});
-$.parentHolder.add(radioGroup);
+
 
 $.saveCustomerButton.addEventListener('click', saveCustomer);

@@ -61,44 +61,23 @@
 //
 
 $.tabGroup.open();
-function addCustomer() {
-	var cust = Alloy.createModel('customers');
-	var data = {
-		name : 'Denis',
-		gender : 'male',
-		customer_type_id : '1',
-		production_house_id : '1',
-		email : 'paramsinghvc@gmail.com',
-		phone : '8750243793'
-	};
-	cust.url = function() {
-		return Alloy.Globals.apiUri + "customers";
-	};
-	cust.save(data, {
-		success : function(res) {
-			// console.log(res);
-		},
-		error : function(err) {
-			// console.log(err);
-		}
-	});
-}
+
 function doOpen() {
 	if (OS_ANDROID) {
 		var activity = $.getView().activity;
 		var menuItem = null;
 		activity.onCreateOptionsMenu = function(e) {
 			if ($.tabGroup.activeTab.title === "Customers") {
-			menuItem = e.menu.add({
-				//itemId : "PHOTO",
-				title : "Add Customer",
-				showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS,
-				icon : Ti.Android.R.drawable.ic_menu_add
-			});
-
-			menuItem.addEventListener("click", function(e) {
-				addCustomer();
-			});
+				menuItem = e.menu.add({
+					//itemId : "PHOTO",
+					title : "Add Customer",
+					showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS,
+					icon : Ti.Android.R.drawable.ic_menu_add
+				});
+				menuItem.addEventListener('click', function() {
+					var custNew = Alloy.createController('customers/customerNew').getView();
+					$.tabGroup.activeTab.open(custNew);
+				});
 			}
 		};
 		activity.invalidateOptionsMenu();

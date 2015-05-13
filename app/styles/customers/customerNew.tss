@@ -21,11 +21,31 @@
 	top: '10dp',
 	left: '10dp',
 	right: '10dp',
+	color : '#161712',
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
 	border: 1,
 	borderColor: 'gray'
+}
+'Picker': {
+	width: '90%',
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	color : '#161712',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
+	border: 1,
+	borderColor: 'gray',
+	bottom : '10dp'
 }
 
 '#saveCustomerButton':{
 	top: '20dp'
 }
+
+'.radioGroup': {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	textAlign: 'left',
+	top: 0
+}
+

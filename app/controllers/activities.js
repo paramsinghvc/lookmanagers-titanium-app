@@ -8,17 +8,31 @@ feeds.url = function() {
 	return Alloy.Globals.apiUri + "feeds?phouse=1";
 };
 
-feeds.fetch({
-	data : {
-		page : 1
-	},
-	success : function(data) {
-		console.log(data);
-	},
-	error : function(err) {
-		console.log(err);
-	}
-});
+
+function fetchData(e) {
+
+	feeds.fetch({
+		data : {
+			page : 1
+		},
+		success : function() {
+			if (e)
+				e.hide();
+		},
+		error : function() {
+			if (e)
+				e.hide();
+		}
+	});
+}
+
+if (OS_ANDROID)
+	$.ptr.refresh();
+
+if (OS_IOS || OS_MOBILEWEB) {
+	fetchData();
+}
+
 
 // var feedsRowClick = function(event) {
 	// var feedsId = feeds.at(event.index).attributes.id;

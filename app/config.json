@@ -8,7 +8,9 @@
   "os:ios": {},
   "os:mobileweb": {},
   "dependencies": {
-    "com.alcoapps.drawermenu": "2.0"
+    "com.alcoapps.drawermenu": "2.0",
+    "nl.fokkezb.pullToRefresh": "2.1.0",
+    "com.jolicode.pullToRefresh": "1.2"
   },
   "apiUri": "http://lookmanager.dev/api/",
   "imagesBase": "http://lookmanager.dev/assets/uploads/",

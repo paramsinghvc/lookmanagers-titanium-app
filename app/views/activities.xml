@@ -2,10 +2,20 @@
 	<Collection src="activities"/>
 	<Tab title="Feeds" icon="images/feed.png" id="feedsTab">
 		<Window title="LookManagers">
-			<TableView name="feedsTable" id="feedsList" dataCollection="activities">
-				<TableViewRow class="feedsRow">					
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="fetchData" platform="android">
+				<TableView name="feedsTable" id="feedsList" dataCollection="activities">
+					<TableViewRow class="feedsRow">
+						<View class="fHolder" top="10" left="10" right="10">
+							<Label id="text" text="{text}" class="feedText" top="5" left="10" right="10" bottom="10"/>
+						</View>
+					</TableViewRow>
+				</TableView>
+			</Widget>
+			<!-- IOS and Mobile Web -->
+			<TableView name="feedsTable" id="feedsList" dataCollection="activities" platform="mobileweb,ios">
+				<TableViewRow class="feedsRow">
 					<View class="fHolder" top="10" left="10" right="10">
-						<Label id="text" text="{text}" class="feedText" top="5" left="10" right="10" bottom="10"/>						
+						<Label id="text" text="{text}" class="feedText" top="5" left="10" right="10" bottom="10"/>
 					</View>
 				</TableViewRow>
 			</TableView>

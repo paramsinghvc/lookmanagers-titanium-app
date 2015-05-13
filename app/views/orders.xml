@@ -2,7 +2,27 @@
 	<Collection src="orders"/>
 	<Tab title="Orders" id="ordersTab" icon="images/orders.png">
 		<Window title="LookManagers" id="cWindow">
-			<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform" onClick="orderRowClick">
+			<RightNavButton platform="ios,mobileweb">
+				<Button id="addOrderButton">Add</Button>
+			</RightNavButton>
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="fetchData" platform="android">
+				<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform" onClick="orderRowClick">
+					<TableViewRow class="orderRow">
+						<View class="imageContainer" top="10">
+							<ImageView class="orderImage" image="{imageUri}"></ImageView>
+						</View>
+						<View class="rightView">
+							<Label id="name" text="{name}" top="5" class="orderName" />
+							<Label id="customer" text="{customer}" top="5" class="orderCustomer"/>
+							<Label id="price" text="{price}" class="orderPrice" top="5" />
+							<Label id="price" text="{current_state}" class="orderCurrentState" top="5" />
+						</View>
+					</TableViewRow>
+				</TableView>
+			</Widget>
+
+			<!-- IOS and Mobile Web -->
+			<TableView name="ordersList" id="ordersList" dataCollection="orders" dataTransform="modelTransform" onClick="orderRowClick" platform="ios,mobileweb">
 				<TableViewRow class="orderRow">
 					<View class="imageContainer" top="10">
 						<ImageView class="orderImage" image="{imageUri}"></ImageView>

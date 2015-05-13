@@ -5,7 +5,24 @@
 			<RightNavButton platform="ios,mobileweb">
 				<Button id="addCustomerButton">Add</Button>
 			</RightNavButton>
-			<TableView name="customers" id="customerList" dataCollection="customers" onClick="customerRowClick">
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="fetchData" platform="android">
+				<TableView name="customers" id="customerList" dataCollection="customers" onClick="customerRowClick">
+					<!-- <RefreshControl id="refresh" tintColor="#393939" onRefreshstart="fetchData" /> -->
+					<TableViewRow class="customer">
+						<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
+						<View class="cHolder">
+							<Label id="name" text="{name}" top="5" class="custDesc" />
+							<Label id="city" text="{current_city}" top="5" class="custCity"/>
+							<Label id="gender" text="{gender}" class="custName" top="5" />
+
+						</View>
+					</TableViewRow>
+				</TableView>
+			</Widget>
+
+			<!-- IOS and Andoroid  -->
+			<TableView name="customers" id="customerList" dataCollection="customers" onClick="customerRowClick" platform="ios,mobileweb">
+				<!-- <RefreshControl id="refresh" tintColor="#393939" onRefreshstart="fetchData" /> -->
 				<TableViewRow class="customer">
 					<!-- <ImageView class="productImage" image="{imageUri}"></ImageView> -->
 					<View class="cHolder">
@@ -16,6 +33,7 @@
 					</View>
 				</TableViewRow>
 			</TableView>
+
 		</Window>
 	</Tab>
 </Alloy>	

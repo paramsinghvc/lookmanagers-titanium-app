@@ -6,12 +6,30 @@ var orders = Alloy.Collections.instance('orders');
 orders.url = function() {
 	return Alloy.Globals.apiUri + "orders?phouse=1";
 };
-orders.fetch({
-	data : {
-		page : 1
-	}
-});
 
+function fetchData(e) {
+
+	orders.fetch({
+		data : {
+			page : 1
+		},
+		success : function() {
+			if (e)
+				e.hide();
+		},
+		error : function() {
+			if (e)
+				e.hide();
+		}
+	});
+}
+
+if (OS_ANDROID)
+	$.ptr.refresh();
+
+if (OS_IOS || OS_MOBILEWEB) {
+	fetchData();
+}
 function modelTransform(model) {
 
 	var t = model.toJSON();
@@ -21,14 +39,13 @@ function modelTransform(model) {
 
 }
 
+var orderRowClick = function(event) {
+	var orderId = orders.at(event.index).attributes.id;
 
- var orderRowClick = function(event){
-	 var orderId = orders.at(event.index).attributes.id;
-	
-	var order = Alloy.createController('orders/order', {orderId : orderId}).getView();
-	
-	
+	var order = Alloy.createController('orders/order', {
+		orderId : orderId
+	}).getView();
+
 	$.ordersTab.open(order);
-		
-	
+
 };

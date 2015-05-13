@@ -1,9 +1,27 @@
 <Alloy>
 	<Collection src="products" />
 	<Tab title="Products" icon="images/dress.png" id="productsTab">
-		
 		<Window title="LookManagers">
-			<TableView name="products" id="productsList" dataCollection="products" dataTransform="modelTransform" onClick="productRowClick">
+			<RightNavButton platform="ios,mobileweb">
+				<Button id="addProductButton">Add</Button>
+			</RightNavButton>
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="fetchData" platform="android">
+				<TableView name="products" id="productsList" dataCollection="products" dataTransform="modelTransform" onClick="productRowClick">
+					<TableViewRow class="productRow">
+						<View class="imageContainer" top="10">
+							<ImageView class="productImage" image="{imageUri}"></ImageView>
+						</View>
+						<View class="rightView">
+							<Label text="{description}" top="3" class="productDesc" />
+							<Label text="{name}" top="3" class="productName"/>
+							<Label text="{price}" top="3" class="productPrice"/>
+						</View>
+					</TableViewRow>
+				</TableView>
+			</Widget>
+
+			<!-- IOS and Mobile Web -->
+			<TableView name="products" id="productsList" dataCollection="products" dataTransform="modelTransform" onClick="productRowClick" platform="ios,mobileweb">
 				<TableViewRow class="productRow">
 					<View class="imageContainer" top="10">
 						<ImageView class="productImage" image="{imageUri}"></ImageView>
@@ -15,6 +33,6 @@
 					</View>
 				</TableViewRow>
 			</TableView>
-		</Window>		
+		</Window>
 	</Tab>
 </Alloy>

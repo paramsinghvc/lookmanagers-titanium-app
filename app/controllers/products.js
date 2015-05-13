@@ -6,11 +6,30 @@ var products = Alloy.Collections.instance('products');
 products.url = function() {
 	return Alloy.Globals.apiUri + "products?phouse=1";
 };
-products.fetch({
-	data : {
-		page : 1
-	}
-});
+
+function fetchData(e) {
+
+	products.fetch({
+		data : {
+			page : 1
+		},
+		success : function() {
+			if (e)
+				e.hide();
+		},
+		error : function() {
+			if (e)
+				e.hide();
+		}
+	});
+}
+
+if (OS_ANDROID)
+	$.ptr.refresh();
+
+if (OS_IOS || OS_MOBILEWEB) {
+	fetchData();
+}
 
 function modelTransform(model) {
 

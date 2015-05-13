@@ -6,12 +6,30 @@ var teamMembers = Alloy.Collections.instance('teamMembers');
 teamMembers.url = function() {
 	return Alloy.Globals.apiUri + "team_members?phouse=1";
 };
-teamMembers.fetch({
-	data : {
-		page : 1
-	}
-});
 
+function fetchData(e) {
+
+	teamMembers.fetch({
+		data : {
+			page : 1
+		},
+		success : function() {
+			if (e)
+				e.hide();
+		},
+		error : function() {
+			if (e)
+				e.hide();
+		}
+	});
+}
+
+if (OS_ANDROID)
+	$.ptr.refresh();
+
+if (OS_IOS || OS_MOBILEWEB) {
+	fetchData();
+}
 function modelTransform(model) {
 
 	var t = model.toJSON();
@@ -29,14 +47,13 @@ function modelTransform(model) {
 
 }
 
+var teamMemberRowClick = function(event) {
+	var teamMemberId = teamMembers.at(event.index).attributes.id;
 
- var teamMemberRowClick = function(event){
-	 var teamMemberId = teamMembers.at(event.index).attributes.id;
-	
-	var teamMember = Alloy.createController('teamMembers/teamMember', {teamMemberId : teamMemberId}).getView();
-	
-	
+	var teamMember = Alloy.createController('teamMembers/teamMember', {
+		teamMemberId : teamMemberId
+	}).getView();
+
 	$.teamMembersTab.open(teamMember);
-		
-	
+
 };

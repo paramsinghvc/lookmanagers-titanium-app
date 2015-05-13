@@ -10,6 +10,13 @@
 				<Label id="phone" top="5" class="custPhone"/>
 			</View>
 			<Button id="editCustomerButton">Edit Customer</Button>
+			<Button id="deleteCustomerButton">Delete Customer</Button>
 		</View>
+		<AlertDialog id="alertDialog"  message="Are you sure you want to delete this customer?" cancel="1">
+			<ButtonNames>
+				<ButtonName>Yes</ButtonName>
+				<ButtonName>No</ButtonName>
+			</ButtonNames>
+		</AlertDialog>
 	</Window>
 </Alloy>

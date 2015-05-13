@@ -2,11 +2,12 @@
 	backgroundColor: '#F2F2F2'
 }
 '#parentHolder':{
-	layout : 'vertical'
+	layout: 'vertical',
+	
 }
 "#cHolder": {
 	layout: 'vertical',
-	height : Titanium.UI.SIZE
+	height: Titanium.UI.SIZE
 }
 
 ".custName": {
@@ -30,8 +31,20 @@
 	color: '#161712'
 }
 
-'#editCustomerButton': {
-	width : Titanium.UI.SIZE,
+'Button': {
+	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
-	top : '20dp'
+	top: '10dp',
+	left: 10,
+	right: 10
+}
+'#deleteCustomerButton': {
+	backgroundColor: '#FF8000',
+	color: '#ffffff',
+	left: 10,
+	right: 10
+}
+'#editCustomerButton': {
+	backgroundColor: '#04B4AE',
+	color : '#ffffff'
 }

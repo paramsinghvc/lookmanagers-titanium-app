@@ -21,11 +21,28 @@ cm.fetch({
 	}
 });
 
-$.editCustomerButton.addEventListener('click', function(){
-	var c = Alloy.createController('customers/customerEdit',{
+$.editCustomerButton.addEventListener('click', function() {
+	var c = Alloy.createController('customers/customerEdit', {
 		customerId : args.customerId
 	}).getView();
-	Alloy.Globals.customersTab.open(c);	
+	Alloy.Globals.customersTab.open(c);
+});
+$.deleteCustomerButton.addEventListener('click', function() {
+	$.alertDialog.show();
 });
 
-
+$.alertDialog.addEventListener('click', function(e) {
+	if (e.index == 0) {
+		cm.destroy({
+			success : function(model, resp, options){
+				alert('Customer Deleted Successfully');
+				$.cWindow.close();
+			},
+			error : function(model, resp, options){
+				alert(resp);
+			}
+		});
+	} else if (e.index == e.source.cancel) {
+	
+	}
+});

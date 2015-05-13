@@ -2,10 +2,29 @@
 	<Collection src="teamMembers"/>
 	<Tab title="Team Members" id="teamMembersTab" icon="images/workers.png">
 		<Window title="LookManagers">
-			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform" onClick="teamMemberRowClick">
+			<RightNavButton platform="ios,mobileweb">
+				<Button id="addTeamMemberButton">Add</Button>
+			</RightNavButton>
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="fetchData" platform="android">
+				<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform" onClick="teamMemberRowClick">
+					<TableViewRow class="teamMemberRow">
+						<View class="imageContainer" top="10">
+							<ImageView class="teamMemberImage" image="{imageUri}"></ImageView>
+						</View>
+						<View class="rightView">
+							<Label id="name" text="{name}" top="5" class="teamMemberName" />
+							<Label id="city" text="{email}" top="5" class="teamMemberEmail"/>
+							<Label id="gender" text="{gender}" class="teamMemberGender" top="5" />
+							<Label id="phone" text="{phone}" class="teamMemberPhone" top="5" />
+						</View>
+					</TableViewRow>
+				</TableView>
+			</Widget>
+			<!-- IOS and Mobile Web -->
+			<TableView name="teamMembers" id="teamMembersList" dataCollection="teamMembers" dataTransform="modelTransform" onClick="teamMemberRowClick" platform="ios,mobileweb">
 				<TableViewRow class="teamMemberRow">
 					<View class="imageContainer" top="10">
-					<ImageView class="teamMemberImage" image="{imageUri}"></ImageView>
+						<ImageView class="teamMemberImage" image="{imageUri}"></ImageView>
 					</View>
 					<View class="rightView">
 						<Label id="name" text="{name}" top="5" class="teamMemberName" />

@@ -10,14 +10,14 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+// 
+// Alloy.Globals.apiUri = "http://lookmanager.dev/api/";
+// Alloy.Globals.imagesBase = "http://lookmanager.dev/assets/uploads/";
+// Alloy.Globals.thumbsBase = "http://lookmanager.dev/assets/uploads/thumbs/"; 
 
-Alloy.Globals.apiUri = "http://lookmanager.dev/api/";
-Alloy.Globals.imagesBase = "http://lookmanager.dev/assets/uploads/";
-Alloy.Globals.thumbsBase = "http://lookmanager.dev/assets/uploads/thumbs/"; 
 
-
-// Alloy.Globals.apiUri = "http://54.169.178.51/api/";
-// Alloy.Globals.imagesBase = "http://54.169.178.51/assets/uploads/";
-// Alloy.Globals.thumbsBase = "http://54.169.178.51/assets/uploads/thumbs/"; 
+Alloy.Globals.apiUri = "http://54.169.178.51/api/";
+Alloy.Globals.imagesBase = "http://54.169.178.51/assets/uploads/";
+Alloy.Globals.thumbsBase = "http://54.169.178.51/assets/uploads/thumbs/"; 
 
 // 54.169.178.51

@@ -1,0 +1,22 @@
+<Alloy>
+	
+	<Window title="LookManagers" id="cWindow" modal="false">
+		<View id="parentHolder">
+			<View id="cHolder">
+				<Label  class="custName" text="Name"/>
+				<TextField id="name"></TextField>
+				<Label class="custGender" text="Gender"/>
+				<TextField id="gender"></TextField>
+				<Label class="custCity" text="City" />
+				<TextField id="city"></TextField>
+				<Label class="custEmail" text="Email" />
+				<TextField id="email"></TextField>
+				<Label class="custPhone" text="Phone" />
+				<TextField id="phone"></TextField>
+				<Label class="custFacebookId" text="Facebook Id" />
+				<TextField id="facebook_id"></TextField>				
+			</View>
+			<Button id="saveCustomerButton">Save</Button>
+		</View>
+	</Window>
+</Alloy>

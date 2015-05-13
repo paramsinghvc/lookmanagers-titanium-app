@@ -1,0 +1,31 @@
+"#cWindow": {
+	backgroundColor: '#F2F2F2'
+}
+'#parentHolder':{
+	layout: 'vertical'
+}
+"#cHolder": {
+	layout: 'vertical',
+	height: Titanium.UI.SIZE
+}
+'Label': {
+	font: {
+		fontSize: '14dp'
+	},
+	color: '#161712',
+	left: '10dp',
+	top: '10dp'
+}
+'TextField': {
+	width: '90%',
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
+	border: 1,
+	borderColor: 'gray'
+}
+
+'#saveCustomerButton':{
+	top: '20dp'
+}

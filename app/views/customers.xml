@@ -2,7 +2,7 @@
 	<Collection src="customers" />
 	<Tab title="Customers" icon="images/group.png" id="customersTab">
 		<Window title="LookManagers">
-			<RightNavButton platform="ios">
+			<RightNavButton platform="ios,mobileweb">
 				<Button id="addCustomerButton">Add</Button>
 			</RightNavButton>
 			<TableView name="customers" id="customerList" dataCollection="customers" onClick="customerRowClick">

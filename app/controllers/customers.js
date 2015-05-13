@@ -25,29 +25,11 @@ var customerRowClick = function(event) {
 };
 
 function addCustomer() {
-	var cust = Alloy.createModel('customers');
-	var data = {
-		name : 'Denis',
-		gender : 'male',
-		customer_type_id : '1',
-		production_house_id : '1',
-		email : 'paramsinghvc@gmail.com',
-		phone : '8750243793'
-	};
-	cust.url = function() {
-		return Alloy.Globals.apiUri + "customers";
-	};
-	cust.save(data, {
-		success : function(res) {
-			// console.log(res);
-		},
-		error : function(err) {
-			// console.log(err);
-		}
-	});
+	var custNew = Alloy.createController('customers/customerNew').getView();
+	$.customersTab.open(custNew);
 }
 
-if (OS_IOS) {
+if (OS_IOS || OS_MOBILEWEB) {
 	$.addCustomerButton.addEventListener('click', addCustomer);
 }
 

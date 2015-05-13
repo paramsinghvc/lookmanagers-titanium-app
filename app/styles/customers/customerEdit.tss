@@ -1,4 +1,54 @@
-
-".container" : {
-  
+"#cWindow": {
+	backgroundColor: '#F2F2F2'
 }
+'#parentHolder':{
+	layout: 'vertical',
+	bottom: '20dp'
+}
+"#cHolder": {
+	layout: 'vertical',
+	height: 'auto'
+}
+'Label': {
+	font: {
+		fontSize: '14dp'
+	},
+	color: '#161712',
+	left: '10dp',
+	top: '10dp'
+}
+'TextField': {
+	width: '90%',
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	color: '#161712',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
+	border: 1,
+	borderColor: 'gray'
+}
+'Picker': {
+	width: '90%',
+	top: 10,
+	left: '10dp',
+	right: '10dp',
+	color: '#161712',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
+	border: 1,
+	borderColor: 'gray'
+}
+
+'#saveCustomerButton':{
+	top: 10,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	bottom: 10
+}
+
+'.radioGroup': {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	textAlign: 'left',
+	top: 0
+}
+

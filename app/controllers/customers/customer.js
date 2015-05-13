@@ -21,4 +21,11 @@ cm.fetch({
 	}
 });
 
+$.editCustomerButton.addEventListener('click', function(){
+	var c = Alloy.createController('customers/customerEdit',{
+		customerId : args.customerId
+	}).getView();
+	Alloy.Globals.customersTab.open(c);	
+});
+
 

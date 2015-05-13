@@ -1,6 +1,6 @@
 var args = arguments[0] || {};
 
-Alloy.Globals.productsTab = $.customersTab;
+Alloy.Globals.customersTab = $.customersTab;
 
 var customers = Alloy.Collections.instance('customers');
 
@@ -21,7 +21,6 @@ var customerRowClick = function(event) {
 	}).getView();
 
 	$.customersTab.open(cust);
-
 };
 
 function addCustomer() {

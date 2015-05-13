@@ -14,6 +14,13 @@ exports.createGroup = function(arg) {
 			self.selectedValue = null;
 		}
 	};
+	
+	self.set = function(i) {
+		if (self.children[i]) {// has a selected value
+			self.children[i].children[0].setImage(arg.radioItemsBackgroundSelectedImage);
+			
+		}
+	};
 
 	self.groupId = arg.groupId;
 	self.layout = arg.layout;

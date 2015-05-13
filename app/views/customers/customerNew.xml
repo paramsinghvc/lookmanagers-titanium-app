@@ -1,12 +1,13 @@
 <Alloy>
 	<Window title="LookManagers" id="cWindow" modal="false">
 		<ScrollView id="parentHolder">
+
 			<View id="cHolder">
 				<Label class="photo" text="Add Photo" />
-					<Button id="photoUpload">Photo</Button>
-					<View id="photoFrame" width="100" height="100">
-						<ImageView width="auto" height="auto" image="images/no_photo.png" id="photo"></ImageView>
-					</View>
+				<Button id="photoUpload">Photo</Button>
+				<View id="photoFrame" width="100" height="100">
+					<ImageView width="auto" height="auto" image="images/no_photo.png" id="photo"></ImageView>
+				</View>
 				<Label  class="custName" text="Name"/>
 				<TextField id="name"></TextField>
 				<Label class="custGender" text="Gender"/>
@@ -22,7 +23,7 @@
 				<Label class="custFacebookId" text="Facebook Id" />
 				<TextField id="facebook_id"></TextField>
 				<Label class="custDOB" text="Date of Birth" />
-				<Picker id="datepicker" top="10"
+				<Picker id="datepicker"
 				type="Ti.UI.PICKER_TYPE_DATE"
 				minDate="1900,1,1"></Picker>
 			</View>

@@ -2,11 +2,12 @@
 	backgroundColor: '#F2F2F2'
 }
 '#parentHolder':{
-	layout: 'vertical'
+	layout: 'vertical',
+	bottom: '20dp'
 }
 "#cHolder": {
 	layout: 'vertical',
-	height: Titanium.UI.SIZE
+	height: 'auto'
 }
 'Label': {
 	font: {
@@ -21,25 +22,27 @@
 	top: '10dp',
 	left: '10dp',
 	right: '10dp',
-	color : '#161712',
+	color: '#161712',
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
 	border: 1,
 	borderColor: 'gray'
 }
 'Picker': {
 	width: '90%',
-	top: '10dp',
+	top: 10,
 	left: '10dp',
 	right: '10dp',
-	color : '#161712',
+	color: '#161712',
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // default style
 	border: 1,
-	borderColor: 'gray',
-	bottom : '10dp'
+	borderColor: 'gray'
 }
 
 '#saveCustomerButton':{
-	top: '20dp'
+	top: 10,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	bottom: 10
 }
 
 '.radioGroup': {

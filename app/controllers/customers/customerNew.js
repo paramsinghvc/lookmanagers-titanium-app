@@ -36,8 +36,8 @@ function saveCustomer() {
 	var cust = Alloy.createModel('customers');
 	var data = {
 		name : $.name.value,
-		gender : genderRadioGroup.value == 'Male' ? 'male' : 'female',
-		customer_type_id : customerTypeRadioGroup.value == 'store' ? '1' : '2',
+		gender : genderRadioGroup.selectedValue == 0 ? 'male' : 'female',
+		customer_type_id : customerTypeRadioGroup.selectedValue == 0 ? '1' : '2',
 		production_house_id : '1',
 		email : $.email.value,
 		phone : $.phone.value,
@@ -50,7 +50,32 @@ function saveCustomer() {
 
 	cust.save(data, {
 		success : function(model, response, options) {
-			alert('Customer Saved Successfully');
+
+			if (image) {
+
+				var xhr = Ti.Network.createHTTPClient({
+					onload : function(e) {
+						Ti.API.info(this.responseText);
+						//check what the parse.com send back
+						var responseObject = JSON.parse(this.responseText);
+
+					},
+					onerror : function(e) {
+						Ti.API.info(this.responseText);
+						//alert('Error Getting Key Values');
+					}
+					
+				});
+				//end of HttpClient object creation, xhr.
+
+				xhr.open("POST", 'http://lookmanager.dev/api/customer/img/' + response.customer.id);
+
+				xhr.send({
+					photo : image
+				});
+				
+			
+			}
 
 		},
 		error : function(model, response, options) {
@@ -81,7 +106,7 @@ $.photoUpload.addEventListener('click', function() {
 
 				success : function(event) {
 
-					 image = event.media;
+					image = event.media;
 
 					if (event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
 
@@ -120,7 +145,7 @@ $.photoUpload.addEventListener('click', function() {
 			Titanium.Media.openPhotoGallery({
 				success : function(event) {
 
-					 image = event.media;
+					image = event.media;
 
 					if (event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
 
